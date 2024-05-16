@@ -32,7 +32,7 @@
     color: #0396fc;
 }
 .row{
-    width: 90%;
+    max-width: 90vw;
     display: flex;
     margin: auto;
     align-items: center;
