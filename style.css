@@ -20,7 +20,6 @@
 }
 .todoApp h2{
     width: 90%;
-    margin: auto;
     color: #002765;
     display: flex;
     align-items: center;
@@ -32,9 +31,8 @@
     color: #0396fc;
 }
 .row{
-    max-width: 90vw;
+    width: 100%;
     display: flex;
-    margin: auto;
     align-items: center;
     justify-content: space-between;
     background: #edeef0;
@@ -101,4 +99,12 @@ ul li span{
 }
 ul li span:hover{
     background: #edeef0;
+}
+@media (max-width:400px) {
+    .row{
+        width: 90%;
+    }
+    button{
+        padding: 16px 25px;
+    }
 }
