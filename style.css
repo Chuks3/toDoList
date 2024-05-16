@@ -7,8 +7,7 @@
 .container{
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(135deg, #153677, #4e085f);
-    background: rgb(3, 194, 252);
+    background: lightgray;
     padding: 10px;
 }
 .todoApp{
@@ -30,6 +29,7 @@
 .todoApp h2 img{
     width: 30px;
     margin-left: 10px;
+    color: #0396fc;
 }
 .row{
     width: 90%;
@@ -54,7 +54,7 @@ button{
     border: none;
     outline: none;
     padding: 16px 50px;
-    background: #ff5945;
+    background: darkgray;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
