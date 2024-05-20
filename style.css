@@ -44,6 +44,7 @@ input{
     flex: 1;
     border: none;
     outline: none;
+    overflow: hidden;
     background: transparent;
     padding: 10px;
     font-weight: 14px;
@@ -67,7 +68,6 @@ ul li{
     position: relative;
 }
 ul li::before{
-    content: '';
     position: absolute;
     height: 28px;
     width: 28px;
