@@ -18,7 +18,7 @@ row.addEventListener('submit', (e) => {
         input.setAttribute('readonly', 'readonly');
         li.appendChild(input);
 
-        b.innerText = "\u003f";
+        b.innerText = "\u270d";
         li.appendChild(b);
 
         let span = document.createElement("span");
