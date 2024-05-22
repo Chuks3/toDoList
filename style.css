@@ -23,14 +23,14 @@
     color: #002765;
     display: flex;
     align-items: center;
-    margin-bottom: 20px;   
+    margin-bottom: 20px;
 }
 .todoApp h2 img{
     width: 30px;
     margin-left: 10px;
     color: #0396fc;
 }
-.row{
+#row{
     width: 100%;
     display: flex;
     align-items: center;
@@ -59,13 +59,14 @@ button{
     cursor: pointer;
     border-radius: 40px;
 }
-ul li{
+ul li, .li{
     list-style: none;
     font-size: 17px;
     padding: 12px 8px 12px 50px;
     user-select: none;
     cursor: pointer;
     position: relative;
+    /* height: 0.2px; */
 }
 ul li::before{
     position: absolute;
@@ -75,20 +76,41 @@ ul li::before{
     content: "\2610";
     background-size: cover;
     background-position: center;
-    top: 12px;
+    top: 17px;
     left: 8px;
 }
-ul li.checked{
+ul li input{
+    cursor: pointer;
+    width: 75%;
+    margin-top: 0;
+    /* text-decoration: line-through; */
+
+}
+.checked{
     color: #555;
     text-decoration: line-through;
 }
-ul li.checked::before{
+.checked::before{
     content: "\2611";
 }
-ul li span{
+b{
+    font-family: wingdings;
+    position: absolute;
+    right: 43px;
+    top: 9px;
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 600;
+}
+span{
     position: absolute;
     right: 0;
-    top: 5px;
+    top: 11px;
     width: 40px;
     height: 40px;
     font-size: 22px;
@@ -97,7 +119,7 @@ ul li span{
     text-align: center;
     border-radius: 50%;
 }
-ul li span:hover{
+ul li span:hover, b:hover{
     background: #edeef0;
 }
 @media (max-width:400px) {
