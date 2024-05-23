@@ -46,7 +46,7 @@ row.addEventListener('submit', (e) => {
         if(b.innerText.toLowerCase() == "\u270E"){
             input.removeAttribute("readonly");
             input.focus();
-            b.innerHTML = "\<";
+            b.innerHTML = "\u003c";
         }
         else{
             input.setAttribute("readonly", "readonly");
