@@ -129,4 +129,7 @@ ul li span:hover, b:hover{
     button{
         padding: 16px 25px;
     }
+    ul li input:focus{
+        background: unset;
+    }
 }
