@@ -18,7 +18,7 @@ row.addEventListener('submit', (e) => {
         input.setAttribute('readonly', 'readonly');
         li.appendChild(input);
 
-        b.innerText = "\u003f";
+        b.innerText = '\u270E';
         li.appendChild(b);
 
         let span = document.createElement("span");
@@ -43,14 +43,14 @@ row.addEventListener('submit', (e) => {
     }, false);
 
     b.addEventListener('click', () => {
-        if(b.innerText.toLowerCase() == "\u003f"){
+        if(b.innerText.toLowerCase() == "\u270E"){
             input.removeAttribute("readonly");
             input.focus();
-            b.innerHTML = "s";
+            b.innerHTML = "\<";
         }
         else{
             input.setAttribute("readonly", "readonly");
-            b.innerText = "\u003f";
+            b.innerText = "\u270E";
         }
     })
 

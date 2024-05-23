@@ -83,8 +83,10 @@ ul li input{
     cursor: pointer;
     width: 75%;
     margin-top: 0;
-    /* text-decoration: line-through; */
-
+    /* border-radius: 0%; */
+}
+ul li input:focus{
+    background: #edeef0;
 }
 .checked{
     color: #555;
@@ -97,10 +99,10 @@ b{
     font-family: wingdings;
     position: absolute;
     right: 43px;
-    top: 9px;
+    top: 11px;
     width: 40px;
     height: 40px;
-    font-size: 25px;
+    font-size: 20px;
     color: #555;
     line-height: 40px;
     text-align: center;
@@ -113,7 +115,7 @@ span{
     top: 11px;
     width: 40px;
     height: 40px;
-    font-size: 22px;
+    font-size: 25px;
     color: #555;
     line-height: 40px;
     text-align: center;
