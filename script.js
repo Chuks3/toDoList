@@ -66,7 +66,7 @@ var lists = [];
         if(b.innerText.toLowerCase() == "\u270E"){
             input.removeAttribute("readonly");
             input.focus();
-            b.innerHTML = '\u1f5ab';
+            b.innerHTML = '\u1f4be';
         }
         else{
             input.setAttribute("readonly", "readonly");
