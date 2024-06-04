@@ -93,7 +93,7 @@ ul li input:focus{
 .checked::before{
     content: "\2611";
 }
-b{
+i{
     font-family: wingdings;
     position: absolute;
     right: 43px;
@@ -107,6 +107,9 @@ b{
     border-radius: 50%;
     font-weight: 600;
 }
+.far{
+    top: 20px;
+}
 span{
     position: absolute;
     right: 0;
@@ -119,7 +122,7 @@ span{
     text-align: center;
     border-radius: 50%;
 }
-ul li span:hover, b:hover{
+ul li span:hover, i:hover{
     background: #edeef0;
 }
 @media (max-width:400px) {
@@ -130,6 +133,6 @@ ul li span:hover, b:hover{
         padding: 16px 25px;
     }
     ul li input:focus{
-        background: none;
+        background: transparent;
     }
 }
