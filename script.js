@@ -50,12 +50,12 @@ function showList() {
                 e.target.firstElementChild.classList.toggle("checked");
             }
         }, false);
-        
+
         // Creating, initializing, and adding edit button to li element
         const b = document.createElement('i');
         b.innerText = '\u270E';
         li.appendChild(b);
-        
+
         // Adding functionality to edit button using an if statement
         b.addEventListener('click', () => {
             if(b.innerText.toLowerCase() == "\u270E"){
