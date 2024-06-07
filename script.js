@@ -11,7 +11,7 @@ row.addEventListener('submit', e => {
 
     // Making sure input field is !empty
     if (inputBox.value.trim() === '') {
-        alert("Please add to your list!!!")
+        alert("Please add to your list!!!");
     }
     else{
         // Adding data to bottom of the array
@@ -20,6 +20,7 @@ row.addEventListener('submit', e => {
         // Clearing input field & displaying the list
         inputBox.value = '';
         showList();
+        input.value = '';
     }
 })
 
@@ -27,7 +28,7 @@ row.addEventListener('submit', e => {
 function showList() {
     clearList(listContainer);
 
-    // Displaying each element with a loop
+    // Displaying each task with a loop
     lists.forEach(list => {
         // Creating, initializing, and adding an li element to the listContainer
         const li = document.createElement('li');
