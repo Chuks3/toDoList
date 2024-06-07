@@ -17,7 +17,7 @@ row.addEventListener('submit', e => {
         // Adding data to bottom of the array
         lists.push(inputBox.value);
 
-        // Clearing input field & displaying the list
+        // Clearing input fields & displaying the list
         inputBox.value = '';
         showList();
         input.value = '';
